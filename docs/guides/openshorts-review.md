@@ -18,7 +18,7 @@ Those are different products and different operating arrangements. The name alon
 | OpenShorts.app | The upstream project's hosted service | Your account and the service's plan limits |
 | OpenShorts.org / Shortyard | Our independent browser-based clipping service | Your account, source videos, clip review, and downloads |
 
-[OpenShorts.org](https://openshorts.org/?utm_source=medium&utm_medium=outreach&utm_campaign=backlinks) is not the official OpenShorts website and is not affiliated with OpenShorts.app or its authors. Sharing an engine does not mean the hosted interfaces have identical features.
+[OpenShorts.org](https://openshorts.org/?utm_source=github-pages&utm_medium=outreach&utm_campaign=backlinks) is not the official OpenShorts website and is not affiliated with OpenShorts.app or its authors. Sharing an engine does not mean the hosted interfaces have identical features.
 
 ## The online workflow: start with your original file
 
@@ -26,7 +26,7 @@ The Shortyard homepage puts the upload area next to a YouTube URL field. Support
 
 For a first attempt, use a short talking video you own: an interview answer, a podcast segment, or an explanation recorded to camera. Keep the original source file available.
 
-![Shortyard upload interface](01-online-upload.jpg)
+![Shortyard upload interface](../assets/01-online-upload.jpg)
 
 *Shortyard on OpenShorts.org: upload a file or provide a YouTube link. Screenshot captured November 23, 2026.*
 
@@ -40,7 +40,7 @@ Uploads avoid that particular dependency. They do not guarantee a successful job
 
 The site has a public sample section using GTA VI Trailer 2 footage, with the original source credited to Rockstar Games. Those samples demonstrate the site's published output; they are not a new podcast experiment conducted for this review.
 
-![Public sample clips](02-public-samples.jpg)
+![Public sample clips](../assets/02-public-samples.jpg)
 
 *Existing public trailer samples on OpenShorts.org. Source footage: Rockstar Games. These are not podcast benchmark results.*
 
@@ -51,7 +51,7 @@ curl -fL https://openshorts.org/samples/gta6-t2-0.mp4 -o sample.mp4
 ffprobe -v error -select_streams v:0   -show_entries stream=codec_name,width,height,r_frame_rate   -show_entries format=duration -of json sample.mp4
 ```
 
-![Actual FFprobe output, typeset for readability](04-terminal-output.jpg)
+![Actual FFprobe output, typeset for readability](../assets/04-terminal-output.jpg)
 
 *Actual FFprobe output from the downloaded public sample, typeset for readability. This verifies that file's encoding and dimensions, not the quality of every generated clip.*
 
@@ -73,7 +73,7 @@ docker compose up --build
 
 The documented dashboard address is `http://localhost:5175`. The optional environment file is configuration, not proof that all required model services are ready. Follow the current README for the features you intend to use.
 
-![Upstream self-hosting command reference](05-terminal-self-host.jpg)
+![Upstream self-hosting command reference](../assets/05-terminal-self-host.jpg)
 
 *Command reference based on the upstream README. This is an installation recipe, not a screenshot of a completed deployment.*
 
@@ -101,7 +101,7 @@ Shortyard packages the online clipping path differently. Its current plans are:
 
 *Checked November 23, 2026. The free allowance requires an account and is subject to regional eligibility, usage controls, and available daily capacity. See the current site before submitting.*
 
-![Shortyard pricing page](03-pricing.jpg)
+![Shortyard pricing page](../assets/03-pricing.jpg)
 
 *The pricing page distinguishes a pack's total balance from the maximum source length per run.*
 
@@ -125,4 +125,4 @@ Self-hosting is worth considering when you already manage Docker, want to custom
 
 The browser route is a useful starting point when you want to evaluate candidate clips without maintaining a local installation. Try a short original upload, check the captions and framing, and download a result before committing a long recording or buying a larger pack.
 
-You can [try Shortyard on OpenShorts.org](https://openshorts.org/?utm_source=medium&utm_medium=outreach&utm_campaign=backlinks) or read the [upstream OpenShorts documentation](https://github.com/mutonby/openshorts#readme) to explore self-hosting. Choose based on the workflow you want to own—and judge the final clips yourself.
+You can [try Shortyard on OpenShorts.org](https://openshorts.org/?utm_source=github-pages&utm_medium=outreach&utm_campaign=backlinks) or read the [upstream OpenShorts documentation](https://github.com/mutonby/openshorts#readme) to explore self-hosting. Choose based on the workflow you want to own—and judge the final clips yourself.
