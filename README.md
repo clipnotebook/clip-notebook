@@ -6,6 +6,7 @@ Website: https://clipnotebook.github.io/clip-notebook/
 
 ## Resources
 
+- [Snazo.org podcast clipping review](docs/guides/snazo-podcast-clips-review.md)
 - [OpenShorts review](docs/guides/openshorts-review.md)
 - [FFmpeg recipes](docs/downloads/ffmpeg-recipes.sh)
 - [Caption timing starter](docs/downloads/captions.srt)
